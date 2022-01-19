@@ -2,7 +2,7 @@
 
 ## Resources
 - Lecture Recording: https://vimeo.com/667988807/693c788aec
-- Code (in this repo)
+- Code:  https://github.com/idbentley/lighthouse-lectures/tree/main/flex-w5d1-full-w2d3-networking
 - Slides (in this repo)
 
 ## Objectives
