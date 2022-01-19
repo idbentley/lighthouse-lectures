@@ -8,12 +8,19 @@ server.listen(port, () => {
   console.log(`Server is listening on port ${port}`);
 });
 
+let id = 0;
+const nextId = () => {
+  return id++;
+}
+
+/* OR use a closure with an immediately invoked function!
 const nextId = (() => {
   let id = 0;
   return () => {
     return id++;
   }
-})();
+})();*/
+
 const listOfClients = [];
 
 const writeToAllClients = (data, client, listOfClients) => {
