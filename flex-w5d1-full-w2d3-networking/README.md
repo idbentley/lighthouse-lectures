@@ -1,12 +1,12 @@
 # Networking with TCP and HTTP
 
 ## Resources
-- Lecture Recording: 
+- Lecture Recording: https://vimeo.com/667988807/693c788aec
 - Code (in this repo)
 - Slides (in this repo)
 
 ## Objectives
-- what is networking? (quick overview)
+- The layers of the internet
 - TCP introduction
 - Client/Server demo
 - HTTP overview
