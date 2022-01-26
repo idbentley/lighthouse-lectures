@@ -1,0 +1,18 @@
+{
+  "homeHeaders": {
+    "en": "Hello!",
+    "fr": "Bonjour"
+  },
+  "homeBodies": {
+    "en": "Happy you stopped by! Welcome to the best website with all the functionalities!",
+    "fr": "Heureux que tu sois passé ! Bienvenue sur le meilleur site web avec toutes les fonctionnalités !"
+  },
+  "aboutHeaders": {
+    "en": "The About Page!",
+    "fr": "La page À propos !"
+  },
+  "aboutBodies": {
+    "en": "You are seeing the hardwork of a gremlin, dedicated to making this site available to you!",
+    "fr": "Vous voyez le travail acharné d'un gremlin, dévoué à mettre ce site à votre disposition !"
+  }
+}
