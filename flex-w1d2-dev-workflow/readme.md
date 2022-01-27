@@ -4,7 +4,7 @@
  - Lecture Video: https://vimeo.com/670889080/bbdf824973
  - [Curriculum Overview](https://docs.google.com/presentation/d/1_NWYcPhS6Q3hQKXnh09Eufl7hs45yBLbUBZhWyvqeSc)
  - Dev Workflow Slides - in this repo
- - Code: https://github.com/idbentley/lighthouse-lectures/tree/main/flex-w1d1-dev-workflow
+ - Code: https://github.com/idbentley/lighthouse-lectures/tree/main/flex-w1d2-dev-workflow
 
 
 ## Content
