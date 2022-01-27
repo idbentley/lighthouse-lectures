@@ -1,5 +1,12 @@
 # Lecture W1D2 - The Dev Workflow
 
+## Resources
+ - Lecture Video: https://vimeo.com/670889080/bbdf824973
+ - [Curriculum Overview](https://docs.google.com/presentation/d/1_NWYcPhS6Q3hQKXnh09Eufl7hs45yBLbUBZhWyvqeSc)
+ - Dev Workflow Slides - in this repo
+ - Code: https://github.com/idbentley/lighthouse-lectures/tree/main/flex-w1d1-dev-workflow
+
+
 ## Content
 
 - Intro
@@ -13,10 +20,6 @@
 I've taught hundreds of students, many of whom come from non-technical backgrounds. Becoming a software developer is a _life changing_ move, and it's 100% acheivable.  With that being said, it's an incredible amount of work, and it will challenge you in ways that you don't expect.
 
 Both a career and Sofware Development and this bootcamp program will make you uncomfortable, it's hard sometimes.  It can feel isolating, overwhelming, it can make you feel like you are not good enough, and all of these feelings are normal - what is important is your persistence.
-
-## Curriculum Overview
-
-[slides](https://docs.google.com/presentation/d/1_NWYcPhS6Q3hQKXnh09Eufl7hs45yBLbUBZhWyvqeSc)
 
 ## Remote Lecture
 
