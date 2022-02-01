@@ -1,5 +1,10 @@
 # Objects In Javascript
 
+## Resources
+ - Code Repo: https://github.com/idbentley/lighthouse-lectures/tree/main/flex-w2d1-full-w1d3-objects-js
+ - Video: https://vimeo.com/672510780/dea0f13ebe
+
+
 ### Primitive Types
 There are 7 primitive types in Javascript
 1. String
@@ -76,7 +81,7 @@ console.log(instructor) // > Ian
 
 *Remember the rule* primitives are passed by value.
 
-Changes made to primitives inside of functions do not persist.
+Changes made to primitives inside of functions *do not* persist.
 
 ### Objects are Passed as References
 
@@ -91,11 +96,12 @@ const instructor = {
 const updateInstructor = function(instructor){
   instructor.name = 'Taiwo O';
   console.log('instructor name during function:', instructor.name);
+}
 
 console.log("instructor name before function:", instructor.name) // > Ian
 console.log(updateInstructor(instructor)) // > Taiwo
 console.log("instructor name after function:", instructor.name) // > Taiwo
-}
+
 
 ```
 
