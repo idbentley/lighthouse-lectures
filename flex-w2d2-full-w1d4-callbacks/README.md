@@ -128,6 +128,32 @@ const addTwoNumbers = (num1, num2) => num1 + num2;
 
 ```
 
+### Arrow functions can't be used as methods
+
+```js
+const car = {
+    maxFuelLevel: 100,
+    fuelLevel: 10,
+    displayFuelLevel: function () {
+        console.log(`Currentley fueled at ${this.fuelLevel}L ${this.maxFuelLevel / this.fuelLevel}% of max`);
+    }
+}
+```
+
+With regular `function` declaration syntax, the context of the function is the `car` object.
+
+```js
+const car = {
+    maxFuelLevel: 100,
+    fuelLevel: 10,
+    displayFuelLevel: () => {
+        console.log(`Currentley fueled at ${this.fuelLevel}L ${this.maxFuelLevel / this.fuelLevel}% of max`);
+    }
+}
+```
+With an arrow function, the context of the function is the `module` - _not_ the `car` object.
+
+
 ### Array iteration functions
 
 There are a few useful array iteration functions that we should know:
