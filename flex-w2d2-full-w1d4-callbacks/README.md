@@ -1,8 +1,8 @@
 # Callbacks
 
 ## Resources
-- Video: 
-- Code Repo: 
+- Video: https://vimeo.com/673351015/8403bec0fe
+- Code Repo: https://github.com/idbentley/lighthouse-lectures/tree/main/flex-w2d2-full-w1d4-callbacks
 
 ### Functions as values
 
@@ -52,7 +52,6 @@ const addDeux = addTwo;
 const result = addTwo(3);
 
 ```
-
 
 ### Passing Functions to Functions
 
@@ -163,6 +162,7 @@ There are a few useful array iteration functions that we should know:
  - forEach
 
 Filter returns an array with only the values that pass a conditional check
+
 ```js
 const evens = [1, 2, 3, 4].filter(num => num % 2 === 0);
 console.log(evens); // > [2, 4]
@@ -170,6 +170,24 @@ console.log(evens); // > [2, 4]
 const properNouns = ["Ian", "cat", "dog", "Taiwo"].filter(name => name[0].toUpperCase() === name[0]);
 console.log(properNouns); // > ["Ian", "Taiwo"]
 ```
+
+How could we implement our own version of `filter`?
+
+```js
+// accepts a callback that returns a boolean
+const filter = function (array, callback) {
+    const result = [];
+    for (const item of array) {
+        if (callback(item)) {
+            result.push(item);
+        } else {
+            // DO NOTHING
+        }
+    }
+    return result;
+}
+```
+
 
 Map returns an array with a modification applied to each array item
 ```js
