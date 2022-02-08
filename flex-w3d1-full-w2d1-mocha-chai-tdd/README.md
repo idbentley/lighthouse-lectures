@@ -2,7 +2,7 @@
 
 ## Resources
  - Video: 
- - Repo
+ - Repo: https://github.com/idbentley/lighthouse-lectures/tree/main/flex-w3d1-full-w2d1-mocha-chai-tdd
 
 
 ## Module export/require review
