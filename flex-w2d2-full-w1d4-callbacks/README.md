@@ -70,8 +70,9 @@ doSomething(console.log) // => 2
 doSomething(addTwo) // => 4
 ```
 
-// But we can do something first
+
 ```js
+// But we can do something first
 const addTwo = function(num) {
     return num + 2;
 }
@@ -190,6 +191,7 @@ const filter = function (array, callback) {
 
 
 Map returns an array with a modification applied to each array item
+
 ```js
 const doubled = [1, 2, 3, 4].map(num => num * 2);
 console.log(doubled);
@@ -198,6 +200,7 @@ const capitalized = ["ian", "dog", "cat", "Taiwo"].map(name => name[0].toUpperCa
 ```
 
 ForEach is just like a `for ... of` loop, but the loop body is a callback:
+
 ```js
 // To print each value
 [1, 2, 3, 4].forEach(num => console.log(num));
@@ -205,6 +208,7 @@ ForEach is just like a `for ... of` loop, but the loop body is a callback:
  - ** note ** I discourage the use of `forEach`, because it has several disadvantages compared to a regular loop, and it's semantics often lead to unexpected bugs!
 
 Reduce is a very fundamental loop iteration function, with which we can build all of the other functions.  It is _very powerful_, and _very generic_, and as a result it can be rather confusing.
+
  ```js
 [1, 2, 3].reduce((accum, num) => num + accum, 0);
 
