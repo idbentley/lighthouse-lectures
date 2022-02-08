@@ -1,7 +1,7 @@
 /*
-    Write a function "numVowels" that accepts a string as imput, and returns the integer value of how many vowels are contained in that string.
+    Write a function "numVowels" that accepts a string as input, and returns the integer value of how many vowels are contained in that string.
 
-    Vowels inclue "aeiou", not "y".
+    Vowels include "aeiou", not "y".
 
     Any non-string value contains no vowels.
 

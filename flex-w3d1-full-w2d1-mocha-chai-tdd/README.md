@@ -1,7 +1,7 @@
 # Mocha, Chai, and TDD
 
 ## Resources
- - Video: 
+ - Video: https://vimeo.com/675019873/efa37cb3d6
  - Repo: https://github.com/idbentley/lighthouse-lectures/tree/main/flex-w3d1-full-w2d1-mocha-chai-tdd
 
 
@@ -44,7 +44,7 @@ const { myFunc } = require('./otherModule');
 const assert = require('assert');
 ```
 
-### Test Driven D**evelopment or TDD
+### Test Driven Development or TDD
 - We begin by writing one or more tests - before writing any code
 - We use a process called Red-Green-Refactor
 - Red: Run the tests - and see that it's failing "RED"
@@ -52,7 +52,7 @@ const assert = require('assert');
 - Refactor: Review your current code, and see if there is some way you can improve it without causing your tests to fail.
 
 ### Mocha
-- A testing framework
+- A testing runner
 - By default, looks in the `test` folder for test files to run
 
 ### Chai
