@@ -21,8 +21,12 @@ describe('tests for the numVowels function', () => {
     expect(numVowels('')).to.equal(0);
   });
 
-  it('returns 3 when given the string "orange"', () => {
-    assert.strictEqual(numVowels('orange'), 3);
+  it('returns 2 when given the string "abba"', () => {
+    assert.strictEqual(numVowels('abba'), 2);
+  });
+
+  it('returns 2 when given the string "apple"', () => {
+    assert.strictEqual(numVowels('apple'), 2);
   });
 
   it('returns 5 when given the string "aeiou"', () => {
