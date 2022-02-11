@@ -1,0 +1,24 @@
+Hey everyone @here,
+In order to prepare for this week's test, **please install the test today** so we can spot any technical issues ahead of time.
+Make sure that you have accepted our GitHub invite via email or from here: https://github.com/lighthouse-labs/. You will then be able to access the assessment test repo here: https://github.com/lighthouse-labs/assessment-exam-student.
+* if you see a 404, it means you did not accept the invite and you don’t have access. Ping @Chetna LHL and include your github username, so that you can be added to the repo.
+Change your current directory to be the directory where you want to install the test (Ex.: cd week1 to put it in your week1 folder)
+Follow these commands to install the test
+```
+git clone git@github.com:lighthouse-labs/assessment-exam-student.git w1-test
+cd w1-test
+npm install sqlite3@4.0.9 && npm install --no-bin-links
+```
+WATCH FOR THESE POTENTIAL ISSUES:
+If you see ‘warnings’ in yellow, you can safely ignore them as they are not errors.
+Vulnerabilities issues can also be ignored safely
+Make sure your current directory is w1-test before executing npm install
+Make sure that you have node version 12.xx or above. You should not be using node version 8.xx.
+If you’re using Vagrant, make sure that Vagrant is up
+You might get an error related to node-pre-gyp. If you’re getting that error try the following:
+```
+npm install -g node-pre-gyp
+```
+If you did not have any errors when installing, there is no further step until you start the test on Friday morning.
+PLEASE COMPLETE THESE INSTRUCTIONS TODAY!
+If you have problems, you will be able to use the mentor queue to fix them, and tomorrow you will be able to spend the entire test period working!

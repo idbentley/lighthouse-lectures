@@ -1,0 +1,28 @@
+Hello Everyone!
+
+Please join this zoom meeting: https://us02web.zoom.us/j/87454685194?pwd=TlVzMkhIbERSY2FWRDQ3V085VkRyQT09
+
+You should be in this meeting with your video on for the duration of the test. When you're done the test, please let the proctor know via a private message on zoom or slack. And then you could leave the zoom meeting if you wish.
+
+In case you need the help or attention of the proctor, please interact with the proctor as you would in a normal lecture by raising up your hands or messaging us on Slack.
+
+Please follow the instructions in yesterday's slack message if you have not yet done so!
+
+While you are only allocated 2h today for the Mock test, we strongly suggest that you spend as much time as you need to reach 100% completion over the weekend. The goal of this mock test is to help you revisit and become more comfortable with automated tests while also becoming comfortable with our assessment test workflow.
+
+Please refer to the assesment repositories' readme for details on how to run the assessment and to check your work!
+
+What you need to do today!
+
+1. In your terminal `cd` into the assessment directory
+2. Go to the mock assessment on compass: https://web.compass.lighthouselabs.ca/days/w01d5/activities/303
+3. Click "Start Exam" and copy the corresponding exam token (It will look like 1862f8eb-2f8f-4000-8576-eec3f2be3834 or simliar - each student receives a unique one).
+4. In your terminal
+```
+$ npm run start-exam [EXAM-TOKEN]
+$ npm run question 0
+$ code .
+```
+5. Complete the work in the `/answers/XX.js` files, and run `npm run question X` for each question as you make progress.  (i.e. to test `/answers/00.js` run `npm run question 0` to test `/answers/01.js` run `npm run question 1`).
+
+There is no limit to how many times you can test your code, so run that command many times as you make progress.
