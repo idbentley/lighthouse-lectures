@@ -1,4 +1,4 @@
-# W02D02 - Ansynchronous Control Flow
+# Ansynchronous Control Flow
 
 ## Resources
  - Code Repo:https://github.com/idbentley/lighthouse-lectures/tree/main/flex-w4d1-full-w2d2-async
