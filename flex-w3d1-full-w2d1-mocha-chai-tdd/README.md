@@ -1,7 +1,7 @@
 # Mocha, Chai, and TDD
 
 ## Resources
- - Video: https://vimeo.com/675019873/efa37cb3d6
+ - Video: https://vimeo.com/675302140/2c71be2fd8
  - Repo: https://github.com/idbentley/lighthouse-lectures/tree/main/flex-w3d1-full-w2d1-mocha-chai-tdd
 
 
