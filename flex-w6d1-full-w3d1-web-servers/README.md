@@ -1,8 +1,8 @@
 # Web Servers 101
 
 ## Resources
- - Code Repo: 
- - Video Link:
+ - Code Repo: https://github.com/idbentley/lighthouse-lectures/tree/main/flex-w6d1-full-w3d1-web-servers
+ - Video Link: https://vimeo.com/680109230/f3204f9d68
  - Slides: in the repo
 
 ## Web server
