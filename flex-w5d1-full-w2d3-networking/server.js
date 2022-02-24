@@ -1,4 +1,3 @@
-
 const net = require('net');
 const port = 9876;
 
@@ -12,14 +11,6 @@ let id = 0;
 const nextId = () => {
   return id++;
 }
-
-/* OR use a closure with an immediately invoked function!
-const nextId = (() => {
-  let id = 0;
-  return () => {
-    return id++;
-  }
-})();*/
 
 const listOfClients = [];
 
@@ -43,11 +34,11 @@ server.on('connection', (socket) => {
 
   listOfClients.push(socket);
 
-  console.log(`${socket.avatar} ${socket.id} is connected to the server`);
+  console.log(`${socket.id} is connected to the server`);
 
   // sending data to our client
   socket.write('Welcome to our server!\n');
-  socket.write(`your avatar is ${socket.avatar} and id is ${socket.id}\n`)
+  socket.write(`Your id is ${socket.id}\n`)
 
   // listening for data coming from our client
   socket.on('data', (data) => {
