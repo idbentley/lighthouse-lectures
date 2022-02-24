@@ -1,8 +1,8 @@
 # Promises
 
 ## Resources
- - video: 
- - code repo:
+ - video: https://vimeo.com/681570813/3312c73711
+ - code repo: https://github.com/idbentley/lighthouse-lectures/tree/main/flex-w5d2-full-w2d4-promises
 
 ## Async Review
 
@@ -151,5 +151,5 @@ request('https://cataaas.com/api/tags').then(body => {
  - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
  - https://blog.greenroots.info/javascript-promises-explain-like-i-am-five
  - https://nodejs.dev/learn/understanding-javascript-promises
- 
+
 
