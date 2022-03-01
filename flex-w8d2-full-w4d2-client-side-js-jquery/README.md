@@ -1,4 +1,4 @@
-# W04D02 - Client-side JS and jQuery
+# Client-side JS and jQuery
 
 ## Resources
  - Video: https://vimeo.com/683497071/2c5f67d844

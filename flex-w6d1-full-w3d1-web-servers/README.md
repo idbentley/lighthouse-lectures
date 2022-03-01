@@ -2,7 +2,7 @@
 
 ## Resources
  - Code Repo: https://github.com/idbentley/lighthouse-lectures/tree/main/flex-w6d1-full-w3d1-web-servers
- - Video Link: https://vimeo.com/680109230/f3204f9d68
+ - Video Link: https://vimeo.com/683501180/16e169d055
  - Slides: in the repo
 
 ## Web server
