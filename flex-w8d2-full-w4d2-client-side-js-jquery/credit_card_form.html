@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" ></script>
+    <script type="text/javascript" src="static/javascripts/payments.js"></script>
+<body>
+    <h1>Pay Me!</h1>
+
+    <form>
+        <div>
+            <label>
+                <input type="radio" name="cc_type" value="M" style="display: none;"/>
+                <img src="static/images/mastercard.png" />
+            </label>
+            <label>
+                <input type="radio" name="cc_type" value="V" style="display: none;" />
+                <img src="static/images/visa.png" />
+            </label>
+            <label>
+            <input type="radio" name="cc_type" value="A" style="display: none;" />
+                <img src="static/images/amex.png" />
+            </label>
+        </div>
+        <div class="form-input">
+            <label for="cvc">Cardholder's Name: *</label>
+            <input type="text" id="cvc" />
+          </div>
+        <div class="form-input">
+            <label for="cc_number">Credit Card Number: *</label>
+            <input type="text" id="cc_number" />
+          </div>
+          <div class="form-input">
+            <label for="expiration">Expiration: *</label>
+            <input type="text" id="expiration" />
+          </div>
+          <div class="form-input">
+            <label for="cvc">CVC: *</label>
+            <input type="text" id="cvc" />
+          </div>
+          <input type="submit" value="Pay Me!"/>
+    </form>    
+
+</body>
