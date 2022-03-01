@@ -2,7 +2,7 @@
 
 ## Resources
  - Video: https://vimeo.com/683497071/2c5f67d844
- - Repo: 
+ - Repo: https://github.com/idbentley/lighthouse-lectures/tree/main/flex-w8d2-full-w4d2-client-side-js-jquery
 
 ## The Browser
  - The Browser is a lot like an Operating System
