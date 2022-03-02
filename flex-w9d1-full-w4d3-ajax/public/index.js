@@ -22,11 +22,11 @@ $(() => {
     fetchBooks();
   
   
-    const createBookComponent = (blog) => {
-      const $title = $('<h2>').text(blog.title);
-      const $author = $('<p>').text(blog.author);
-      const $yearWritten = $('<span>').text(`${blog.year_written} | `);
-      const $price = $('<span>').text(`$ ${blog.price}`);
+    const createBookComponent = (book) => {
+      const $title = $('<h2>').text(book.title);
+      const $author = $('<p>').text(book.author);
+      const $yearWritten = $('<span>').text(`${book.year_written} | `);
+      const $price = $('<span>').text(`$ ${book.price}`);
 
       const $book = $('<div>').addClass('book');
     
@@ -48,7 +48,7 @@ $(() => {
     $form.on('submit', function(event){
       event.preventDefault();
       console.log('The form was submitted!')
-      const serializedData = event.target.serialize();
+      const serializedData = $(event.target).serialize();
   
       console.log(serializedData);
   
