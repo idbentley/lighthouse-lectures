@@ -2,7 +2,7 @@
 
 ## Resources
  - Video: https://vimeo.com/684389799/5ebae17b72
- - Code Repo:
+ - Code Repo: https://github.com/idbentley/lighthouse-lectures/tree/main/flex-w6d2-full-w3d2-crud-with-express
 
 
 
