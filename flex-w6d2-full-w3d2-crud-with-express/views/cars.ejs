@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All cars!!!</title>
+</head>
+<body>
+  <h1>All of the cars</h1>
+  <% for(const carId in cars) { %>
+    <div>
+      <p><%= cars[carId].make %> <%= cars[carId].model %></p>
+      <p>color: <%= cars[carId].color %></p>
+      <p>year: <%= cars[carId].year %></p>
+      <a href="/cars/<%= carId %>">see details</a>
+      <form method="POST" action="/cars/<%= carId %>/delete">
+        <button type="submit">delete this car</button>
+      </form>
+    </div>
+    <hr />
+  <% } %>
+
+  <h2>Add Car</h2>
+  <form method="POST" action="/cars">
+    <label for="color">Color</label>
+    <input type="text" name="color" id="color" />
+    <br />
+    <label for="make">Make</label>
+    <input type="text" name="make" id="make" />
+    <br />
+    <label for="model">Model</label>
+    <input type="text" name="model" id="model" />
+    <br />
+    <label for="year">Year</label>
+    <input type="text" name="year" id="year" />
+    <br />
+    <button type="submit">Create Car</button>
+    
+
+  </form>
+  
+</body>
+</html>
