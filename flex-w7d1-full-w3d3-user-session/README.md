@@ -1,7 +1,7 @@
 # HTTP Cookies, User Authentication, Sessions
 
 ## Resources
-- Lecture Recording: https://vimeo.com/670318025/a97008a69e
+- Lecture Recording: https://vimeo.com/686028184/dbc6fda5c1
 - Code:  https://github.com/idbentley/lighthouse-lectures/tree/main/flex-w7d1-full-w3d3-user-session
 - Slides (in this repo)
 
