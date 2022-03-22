@@ -3,7 +3,7 @@
 ## Resources
 
  - code repo: https://github.com/idbentley/lighthouse-lectures/tree/main/flex-w9d1-full-w4d3-ajax
- - video: https://vimeo.com/683924924/da87c937d3
+ - video: https://vimeo.com/691102666/1dcb1ea853
 
 ## AJAX
 

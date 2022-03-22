@@ -49,10 +49,8 @@ $(() => {
       event.preventDefault();
       console.log('The form was submitted!')
       const serializedData = $(event.target).serialize();
-  
-      console.log(serializedData);
-  
-      $.post('/books', serializedData, (response) => {
+    
+      $.post('/books', serializedData, response => {
         console.log(response)
         fetchBooks();
       })
