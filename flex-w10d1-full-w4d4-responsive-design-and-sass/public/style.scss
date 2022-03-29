@@ -1,0 +1,49 @@
+@import "_variables";
+
+
+body {
+    font-size: $font-size;
+    background-color: $main-color;
+}
+
+#bookshelf {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.book {
+    border: $border;
+    margin: 0.5vw;
+    width: 12em;
+    min-width: 10em;
+    height: 30vh;
+}
+
+.book h2 {
+    font-size: 1.2em;
+}
+
+@media only screen and (max-width: 500px) {
+    /* these styles will be applied if the screen width is less than 500px */
+    #bookshelf {
+        display: block;
+    }
+    .book {
+        width: 99vw;
+    }
+}
+
+form {
+    margin: 2vh;
+    background-color: $form-color;
+    .form-element {
+        label {
+            display: inline-block;
+            width: 30vw;
+            text-align: right;
+        }
+        input {
+            width: 50vw;
+        }
+    }
+}

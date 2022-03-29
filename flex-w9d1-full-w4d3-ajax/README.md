@@ -34,6 +34,7 @@
 ## jQuery AJAX
 
 jQuery gives us an API for making AJAX requests
+
 ```js
 $.ajax({
   url: 'https://jsonplaceholder.typicode.com/posts',

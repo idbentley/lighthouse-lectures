@@ -1,0 +1,7 @@
+$main-color: #155769;
+$form-color: adjust-hue($main-color, -20);
+$border-width: 1px;
+$border-style: solid;
+$border-color: #bebebe;
+$border: $border-width $border-style $border-color;
+$font-size: 14px;

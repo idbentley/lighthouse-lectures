@@ -1,0 +1,46 @@
+body {
+  font-size: 14px;
+  background-color: #155769;
+}
+
+#bookshelf {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.book {
+  border: 1px solid #bebebe;
+  margin: 0.5vw;
+  width: 12em;
+  min-width: 10em;
+  height: 30vh;
+}
+
+.book h2 {
+  font-size: 1.2em;
+}
+
+@media only screen and (max-width: 500px) {
+  /* these styles will be applied if the screen width is less than 500px */
+  #bookshelf {
+    display: block;
+  }
+
+  .book {
+    width: 99vw;
+  }
+}
+form {
+  margin: 2vh;
+  background-color: #15695f;
+}
+form .form-element label {
+  display: inline-block;
+  width: 30vw;
+  text-align: right;
+}
+form .form-element input {
+  width: 50vw;
+}
+
+/*# sourceMappingURL=style.css.map */
