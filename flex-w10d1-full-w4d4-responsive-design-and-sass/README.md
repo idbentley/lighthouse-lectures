@@ -2,7 +2,7 @@
 
 ## Resources
  - Video: https://vimeo.com/693698368/c40f355b94
- - Code: 
+ - Code: https://github.com/idbentley/lighthouse-lectures/tree/main/flex-w10d1-full-w4d4-responsive-design-and-sass
 
 ### Responsive Design
 * From [Wikipedia](https://en.wikipedia.org/wiki/Responsive_web_design):
