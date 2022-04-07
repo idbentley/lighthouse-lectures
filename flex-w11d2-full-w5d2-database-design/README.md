@@ -3,7 +3,16 @@
 ## Resources
 
  - Code Repo: https://github.com/idbentley/lighthouse-lectures/tree/main/flex-w11d2-full-w5d2-database-design
- - Video Link:
+ - Video Link: https://vimeo.com/697115445/1da315a2b2
+
+### Primary Keys
+
+ - The unique identifier for a particular record within a table (UNIQUE)
+ - A primary key can never be null (NOT NULL)
+ - Usually a `BIGINT` sometimes `INTEGER`
+ - Primary Keys and Foreign Keys MUST BE THE SAME DATA TYPE
+
+### Naming Conventions
 
 ### Primary Key
 
@@ -39,7 +48,42 @@
 - Don't use calculated fields (a field that can be derived from one or more other fields, such as `full_name` is a combination of `first_name` and `last_name`)
 - Pull repeated values out to their own table and make reference to them with a foreign key
 - Try not to delete anything (use a boolean flag instead to mark a record as active or inactive)
-- Consider using a `type` field instead of using two (or more) tables to store very similar data (eg. create an `orders` table with an `order_type` field instead of a `purchase_orders` and a `sales_orders` table)
+- Consider using a `type` field instead of using two (or more) tables to store very similar data (eg. create an `orders` table with an `order_type` field instead of a `purchase_orders` and a `sales_orders` table)luralize table names: `authors`
+ - Always call your primary keys: `id`
+ - Foreign keys are made from the table name singularized plus `_id`:
+     - A foreign key referencing the `authors` table: `author_id`
+     - A foreign key referencing the `books` table: `book_id`
+     - A foreign key referencing the `authors_books` table: `authors_book_id`
+
+### Data Types
+
+ - Every Column in a table ** must ** have a data type
+ - Important to choose the smallest useful datatype for a column
+ - Each record in a table has a fixed size determined by the data types of each column
+
+### Relationship Types
+
+ - **One-to-One**: Pretty Rare
+ - **One-to-Many**: Very Common
+ - **Many-to-Many**: Very Common - can be thought of as two One-to-Many
+
+### Normalization
+
+ - About data duplication
+ - We don't need to know the academic underpinnings
+ - Any time we have the same data stored in more than one location
+   - Writing that data becomes complicated
+ - The advantage to breaking data normalization is Query Performance
+
+### Design Concepts
+
+ - `NOT NULL` should be prefered, and you should utilize intelligent defaults
+ - Try to get the database to work as hard as you can
+ - Avoid calculated fields: `first_name`, `last_name` and `full_name`
+ - Any repeated values are an indication that Normalization can happen here
+ - Don't use `DELETE` statements, instead add a `deleted_at` column
+ - Sometimes use `type` columns to differentiate things rather than multiple tables with very similar data
+
 
 ### Entity Relationship Diagram (ERD)
 
@@ -49,7 +93,7 @@
 
 ### Tuesdays Songs Database
 
-[Songs Database](songs_database)
+[Songs Database](songs_database.png)
 
 ### Convert Two Spreadsheets
 - [Gist with instruction](https://gist.github.com/andydlindsay/20e7305e853bad7b587f294b054cf8de)
