@@ -3,7 +3,7 @@
 ## Resources
 
  - Code Repo: https://github.com/idbentley/lighthouse-lectures/tree/main/flex-w11d1-full-w5d1-sql-intro
- - Video Link: https://vimeo.com/695791697/f26434b749x
+ - Video Link: https://vimeo.com/696259153/756490c2ec
  - Slides: In the Repo
 
 ## Databases
