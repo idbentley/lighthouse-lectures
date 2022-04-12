@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All albums</title>
+</head>
+<body>
+    <h1>All Albums</h1>
+    <form method="POST" action="/albums">
+        <label for="album_name">Album Name</label>
+        <input type="text" name="album_name" id="album_name" />
+        <br />
+        <label for="artist_name">Artist</label>
+        <input type="text" name="artist_name" id="artist_name" />
+        <br />
+        <label for="release_date">Release Date</label>
+        <input type="date" name="release_date" id="release_date" />
+        <br />
+        <label for="genre">Genre</label>
+        <input type="text" name="genre" id="genre" />
+        <br />
+        <input type="submit" value="Create Album">
+    </form>
+    <% for (const row of albums) { %>
+        <div>
+            <p><%= row.album_name %> <%= row.artist_name %></p>
+            <p>Released: <%= row.release_date %></p>
+            <p>Genre: <%= row.genre %></p>
+            <form method="POST" action="/albums/<%= row.id %>/delete">
+                <button type="submit">Delete</button>
+            </form>
+        </div>
+        <hr />
+    <% } %>
+</body>
+</html>
