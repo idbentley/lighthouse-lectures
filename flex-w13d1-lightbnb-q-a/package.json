@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "chai": "^4.3.6",
+    "request": "^2.88.2"
+  }
+}

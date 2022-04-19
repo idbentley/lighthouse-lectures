@@ -15,11 +15,16 @@ describe('tests for the numVowels function', () => {
   
   it('returns 0 when not provided a string', () => {
     assert.strictEqual(numVowels(63), 0);
-  });
+  }); 
 
   it('returns 0 when provided the empty string', () => {
     expect(numVowels('')).to.equal(0);
   });
+
+  it('returns counts "a" vowels', () => {
+    assert.strictEqual(numVowels('cat'), 1);
+  });
+
 
   it('returns 2 when given the string "abba"', () => {
     assert.strictEqual(numVowels('abba'), 2);
