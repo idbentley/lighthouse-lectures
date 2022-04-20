@@ -1,5 +1,9 @@
 # Immutable Update Patterns
 
+## Resources
+ - code repo: https://github.com/idbentley/lighthouse-lectures/tree/main/flex-w17d2-full-w7d3-immutable-update-react
+ - video link: https://vimeo.com/701345210/e016c36e5c
+
 ## Value Vs Reference Review
 
 ### Primitives are Passed as Values
