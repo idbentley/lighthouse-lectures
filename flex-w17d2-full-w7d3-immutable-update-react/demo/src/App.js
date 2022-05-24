@@ -1,9 +1,10 @@
 import { useState } from 'react';
-import { NewBookForm } from './NewBookForm';
-import { Book } from './Book';
+import { NewClassForm } from './NewClassForm';
+import { Class } from './Class';
+import { DoubleCounter } from './DoubleCounter';
 
 function App() {
-  const [books, setBooks] = useState([]);
+  const [classes, setClasses] = useState([]);
   const [id, setId] = useState(1);
 
   function getId() {
@@ -11,23 +12,23 @@ function App() {
     return id;
   }
 
-  function addNewBook(book) {
-    console.log(book);
-    setBooks([...books, book]);
+  function addNewClass(cls) {
+    setClasses([...classes, cls]);
   }
 
-  function removeBook(bookId) {
-    setBooks(books.filter(book => book.id !== bookId));
+  function removeClass(classId) {
+    setClasses(classes.filter(cls => cls.id !== classId));
   }
 
   return (
     <div className="App">
       <header className="App-header">
-        <h1>My Book Library</h1>
+        <h1>React University</h1>
       </header>
-      {books.map(book => <Book key={book.id} book={book} removeBook={removeBook} />)}
+      <DoubleCounter />
+      {classes.map(cls => <Class key={cls.id} {...cls} removeClass={removeClass} />)}
       <hr />
-      <NewBookForm addNewBook={addNewBook} getId={getId} />
+      <NewClassForm addNewClass={addNewClass} getId={getId} />
     </div>
   );
 }
