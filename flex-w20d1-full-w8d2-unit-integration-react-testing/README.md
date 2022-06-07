@@ -1,7 +1,7 @@
 # React Unit & Integration Testing
 
 ## Resources
-- code repo: 
+- code repo: https://github.com/idbentley/lighthouse-lectures/tree/main/flex-w20d1-full-w8d2-unit-integration-react-testing
 - video link: https://vimeo.com/718044988/35b07ee816
 
 ### Types of Testing
