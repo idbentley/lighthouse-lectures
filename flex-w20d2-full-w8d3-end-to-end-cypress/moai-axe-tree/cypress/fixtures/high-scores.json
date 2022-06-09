@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "name": "Ian Bentley",
+      "points": 36
+    },
+    {
+      "id": 2,
+      "name": "Margot Schofield",
+      "points": 29
+    },
+    {
+      "id": 3,
+      "name": "Ayisha Caldwell",
+      "points": 22
+    },
+    {
+      "id": 4,
+      "name": "Ada O'Sullivan",
+      "points": 17
+    },
+    {
+      "id": 5,
+      "name": "Cairo Garrison",
+      "points": 13
+    }
+  ]
