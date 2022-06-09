@@ -2,8 +2,8 @@
 
 ## Resources
 
- Code Repo:
- Video Link: 
+ Code Repo: https://github.com/idbentley/lighthouse-lectures/tree/main/flex-w20d2-full-w8d3-end-to-end-cypress
+ Video Link: https://vimeo.com/718841489/2ac58a1dae (unfortunately the first hour or so of the video was lost when my computer crashed)
 
 ### Jest vs Cypress
 * Jest
