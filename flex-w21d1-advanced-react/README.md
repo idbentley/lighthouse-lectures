@@ -1,7 +1,7 @@
 # Advanced Topics in React
 
- - Video Link:
- - Code Repo:
+ - Video Link: https://vimeo.com/720387685/f01866acf5
+ - Code Repo: https://github.com/idbentley/lighthouse-lectures/tree/main/flex-w21d1-advanced-react
 
 ## useRef
 
