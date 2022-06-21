@@ -1,5 +1,10 @@
 # Class-based Components
 
+### Resources
+
+ - Code Repo: https://github.com/idbentley/lighthouse-lectures/tree/main/flex-w21d2-full-w8d4-class-components/
+ - Video: https://vimeo.com/721198262/c0cf1c11c6
+
 ### Review ES6 Classes
 * Classes are a new addition to JavaScript in ES6, which gives JavaScript's `prototypal inheritence` system a more familiar `Class based Object Oriented inheritence` system.
 * You can make reference to the objects own properties and methods using the `this` keyword. 
