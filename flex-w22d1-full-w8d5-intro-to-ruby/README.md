@@ -2,7 +2,7 @@
 
 ### Resources
 
- - Code Repo: 
+ - Code Repo: https://github.com/idbentley/lighthouse-lectures/tree/main/flex-w22d1-full-w8d5-intro-to-ruby
  - Video Link: https://vimeo.com/722711464/38af9a014b
 
 ### Comments and Printing to Standard Out
