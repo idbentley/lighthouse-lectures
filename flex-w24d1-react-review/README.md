@@ -1,8 +1,8 @@
 # React Review
 
 ## Resources
-    - Code Repo:
-    - Video: 
+    - Code Repo: https://github.com/idbentley/lighthouse-lectures/tree/main/flex-w24d1-react-review
+    - Video: https://github.com/idbentley/lighthouse-lectures/tree/main/flex-w24d1-react-review
 
 ## Starting with the Scaffold
 
