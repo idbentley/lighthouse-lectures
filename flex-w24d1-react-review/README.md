@@ -2,8 +2,7 @@
 
 ## Resources
     - Code Repo: https://github.com/idbentley/lighthouse-lectures/tree/main/flex-w24d1-react-review
-    - Video: https://github.com/idbentley/lighthouse-lectures/tree/main/flex-w24d1-react-review
-
+    - Video: https://vimeo.com/727144574/41fa7cf430
 ## Starting with the Scaffold
 
 The Rails scaffold generator is a rapid prototyping tool that gets your system up and running in record time, and by creating just a single scaffold we were able to investigate and learn a great deal about Ruby on Rails generally.
