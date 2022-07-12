@@ -3,7 +3,7 @@
 ## Resources
 
  - Video Link: https://vimeo.com/729345127/1279c7d6e5
- - Code Repo: 
+ - Code Repo: https://github.com/idbentley/lighthouse-lectures/tree/main/w25d1-flex-advanced-topics-recusion
 
 ## Recursion
 
