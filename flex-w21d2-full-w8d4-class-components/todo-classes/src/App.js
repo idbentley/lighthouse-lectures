@@ -1,62 +1,60 @@
 import axios from 'axios';
-import { useState, useEffect } from 'react';
+import { Component } from 'react';
 
 
 import TodoItem from './TodoItem';
 import NewTaskForm from './NewTaskForm';
 
-function App() {
-  const [tasks, setTasks] = useState([]);
+class App extends Component {
 
-  useEffect(() => {
+  constructor() {
+    super();
+    this.state = {
+      tasks: []
+    }
+    this.addTask = this.addTask.bind(this);
+    this.finishTask = this.finishTask.bind(this);
+    this.deleteTask = this.deleteTask.bind(this);
+  }
+  componentDidMount() {
     axios.get('http://localhost:3000/todos').then(results => {
-      setTasks(results.data);
+      this.setState({tasks: results.data});
     });
-  }, []);
-
-  function addTask(task) {
-    setTasks([...tasks, task]);
+  }
+  addTask(task) {
+    // this.setState({...this.state, tasks: [...this.state.tasks, task]});
+    this.setState({tasks: [...this.state.tasks, task]});
   }
 
-  function finishTask (id) {
-    console.log(id);
-    // //1. find the task
-    // const updatedTask = tasks.filter(task => task.id === id)[0];
-    // //2. modify the task
-    // updatedTask.done = true;
-    //3. update the task list
-    // const otherTasks = tasks.filter(task => task.id !== id);
-    // setTasks([...otherTasks, task]);
-
-    const updatedTasks = tasks.map(task => {
+  finishTask (id) {
+    
+    this.setState({tasks: this.state.tasks.map(task => {
       // task => {id: uniqid(), task: 'buy milk', done: false},
-      console.log("comapre: ", task.id, id, task.id !== id);
       if(task.id !== id) {
         return task;
       } else {
         return {...task, done: true};
       }
-    })
-    console.log('updated', updatedTasks);
-    setTasks(updatedTasks);
+    })});
 
   }
 
-  function deleteTask (id) {
-    setTasks(tasks.filter(task => task.id !== id));
+  deleteTask (id) {
+    this.setState({tasks: this.state.tasks.filter(task => task.id !== id)});
   }
 
-  console.log('re-rendering app', tasks);
-  return (
-    <div className="App">
-      <h1>Todo!</h1>
-      <NewTaskForm addTask={addTask} />
-      <ul>
-        {tasks.map(task => <TodoItem key={task.id} {...task} finishTask={finishTask} deleteTask={deleteTask} >{task.task}</TodoItem>)}
-      </ul>
-      
-    </div>
-  );
+  render() {
+    return (
+      <div className="App">
+        <h1>Todo!</h1>
+        <NewTaskForm addTask={this.addTask} />
+        <ul>
+          {this.state.tasks.map(task => <TodoItem key={task.id} {...task} finishTask={this.finishTask} deleteTask={this.deleteTask} >{task.task}</TodoItem>)}
+        </ul>
+        
+      </div>
+    );
+  }
 }
 
 export default App;
