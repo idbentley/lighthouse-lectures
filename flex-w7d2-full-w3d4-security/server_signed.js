@@ -1,7 +1,11 @@
 const express = require('express');
 const morgan = require('morgan');
 const cookieParser = require('cookie-parser');
+// session-cookie is in the homework
+// session-cookie is both encrypted and signed
 const bodyParser = require('body-parser');
+
+const booksRouter = require('./routes/bookRoutes');
 
 const PORT = 9876;
 
@@ -78,4 +82,5 @@ app.post('/logout', (req, res) => {
     res.redirect('/');
 });
 
+app.use('/books', booksRouter)
 app.listen(PORT);
