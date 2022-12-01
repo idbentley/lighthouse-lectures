@@ -71,7 +71,7 @@ let instructor = 'Ian';
 
 const updateInstructor = function(instructor){
   instructor = 'Taiwo';
-  console.log('instructor during function:', instructor)
+  return `instructor during function: ${instructor}`;
 }
 
 console.log(instructor) // > Ian

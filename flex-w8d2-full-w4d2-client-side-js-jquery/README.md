@@ -1,7 +1,7 @@
 # Client-side JS and jQuery
 
 ## Resources
- - Video: https://vimeo.com/683497071/2c5f67d844
+ - Video: https://vimeo.com/manage/videos/683497071/2c5f67d844
  - Repo: https://github.com/idbentley/lighthouse-lectures/tree/main/flex-w8d2-full-w4d2-client-side-js-jquery
 
 ## The Browser
@@ -15,6 +15,7 @@
 - The DOM is an Object Oriented Interface to a given webpage
 - Our HTML is transformed into a hierarchical `tree` data structure that we can interact with _like regular JS objects_
 - Each HTML object becomes a node in the tree with _parents_, _children_, _siblings_, etc.
+
 
 - eg. The browser turns your HTML into the DOM
 

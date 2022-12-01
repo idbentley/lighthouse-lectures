@@ -2,7 +2,7 @@
 
 ## Resources
  - Code Repo: https://github.com/idbentley/lighthouse-lectures/tree/main/flex-w16d1-react-fundamentals
- - Video: https://vimeo.com/708365428/1cc8d0a478
+ - Video: https://vimeo.com/773970190/5f65834075
  - Slides: In the code repo.
 
 ## What is React

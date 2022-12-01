@@ -9,8 +9,9 @@
 
 Today's lecture was all about recusion.  We talked recursive calculations as well as naturally recursive data structures.
 
- ## Resources
+## Resources
 
   - https://leetcode.com/tag/recursion/
   - https://www.geeksforgeeks.org/recursion/
   - https://www.youtube.com/watch?v=KEEKn7Me-ms
+  - https://www.freecodecamp.org/news/how-recursion-works-explained-with-flowcharts-and-a-video-de61f40cb7f9/

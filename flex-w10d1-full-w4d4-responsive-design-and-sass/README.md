@@ -1,7 +1,7 @@
 # Responsive Design and SASS
 
 ## Resources
- - Video: https://vimeo.com/693698368/c40f355b94
+ - Video: https://vimeo.com/759343195/77b83f5797
  - Code: https://github.com/idbentley/lighthouse-lectures/tree/main/flex-w10d1-full-w4d4-responsive-design-and-sass
 
 ### Responsive Design

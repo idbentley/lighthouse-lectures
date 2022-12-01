@@ -14,12 +14,24 @@
   <p>year: <%= car.year %></p>
   <hr />
   <h3>Update color of car:</h3>
+  <h2>Edit car</h2>
   <form method="POST" action="/cars/<%= car.id %>">
-    <label for="color">Color</label>
-    <input type="text" name="color" id="color"/>
-    <br>
-    <button type="submit">Update</button>
-
+      <label for="color">Color</label>
+      <input type="text" name="color" id="color" value="<%= car.color %>"/>
+      <br />
+      <label for="make">Make</label>
+      <input type="text" name="make" id="make" value="<%= car.make %>" />
+      <br />
+      <label for="model">Model</label>
+      <input type="text" name="model" id="model" value="<%= car.model %>" />
+      <br />
+      <label for="year">Year</label>
+      <input type="text" name="year" id="year" value="<%= car.year %>" />
+      <br />
+      <input type="submit" value='Edit Car'/>
+      <!--
+          <button type="submit">Edit Car</button>
+      -->
   </form>
   <hr />
   <a href="/cars">go back to all cars</a>

@@ -10,7 +10,7 @@ function NewBookForm({createNewBook}) {
     function onSubmit (event) {
         event.preventDefault();
         const book = {
-            id: Math.floor(Math.random(100)),
+            id: Math.floor(Math.random()*100),
             title: title,
             author: author
         }

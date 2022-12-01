@@ -14,16 +14,6 @@
 
 ### Naming Conventions
 
-### Primary Key
-
-- A way of uniquely identifying a particular record within a table 
-- Must be unique (within the table) and can never be null
-- The usual data type is auto-incrementing integer (`INTEGER` or `BIGINT`)
-- A Primary Key stored in another table is known as a `Foreign Key`
-- The Primary Key and Foreign Key **MUST** be the same data type
-
-### Naming Conventions
-
 - Table and field names are written in `snake_case`
 - Table names are always pluralized
 - The primary key for each table will simply be called `id`
@@ -32,6 +22,8 @@
 ### Data Types
 
 - Each field in a table **must** have a data type defined for it
+- Important to choose the smallest useful datatype for a column
+- Each record in a table has a fixed size determined by the data types of each column
 - The data type tells the database how much room to set aside to store the value _and_ allows the database to perform type validation on data before insertion (to protect the data integrity of the table)
 - Choosing the perfect data type is less of a concern nowadays because memory is now comparably cheap
 
@@ -55,34 +47,6 @@
      - A foreign key referencing the `books` table: `book_id`
      - A foreign key referencing the `authors_books` table: `authors_book_id`
 
-### Data Types
-
- - Every Column in a table ** must ** have a data type
- - Important to choose the smallest useful datatype for a column
- - Each record in a table has a fixed size determined by the data types of each column
-
-### Relationship Types
-
- - **One-to-One**: Pretty Rare
- - **One-to-Many**: Very Common
- - **Many-to-Many**: Very Common - can be thought of as two One-to-Many
-
-### Normalization
-
- - About data duplication
- - We don't need to know the academic underpinnings
- - Any time we have the same data stored in more than one location
-   - Writing that data becomes complicated
- - The advantage to breaking data normalization is Query Performance
-
-### Design Concepts
-
- - `NOT NULL` should be prefered, and you should utilize intelligent defaults
- - Try to get the database to work as hard as you can
- - Avoid calculated fields: `first_name`, `last_name` and `full_name`
- - Any repeated values are an indication that Normalization can happen here
- - Don't use `DELETE` statements, instead add a `deleted_at` column
- - Sometimes use `type` columns to differentiate things rather than multiple tables with very similar data
 
 
 ### Entity Relationship Diagram (ERD)

@@ -61,9 +61,17 @@ app.get('/cars/:car_id', (req, res) => {
 // Edit POST /cars/:car_id
 app.post('/cars/:car_id', (req, res) => {
   const carId = req.params.car_id;
-  const newColor = req.body.color;
-  cars[carId].color = newColor;
-  res.redirect('/cars');
+  const car = cars[carId];
+  if (!car) {
+      res.redirect('/cars');
+  }
+  car.color = req.body.color;
+  car.make = req.body.make;
+  car.model = req.body.model;
+  car.year = req.body.year;
+
+  res.redirect(`/car/${carId}`)
+
 });
 
 // Add POST /cars

@@ -3,7 +3,7 @@
 ### Resources
 
  - Code Repo: https://github.com/idbentley/lighthouse-lectures/tree/main/flex-w21d2-full-w8d4-class-components/
- - Video: https://vimeo.com/721198262/c0cf1c11c6
+ - Video: https://vimeo.com/732477101/2532ff0071
 
 ### Review ES6 Classes
 * Classes are a new addition to JavaScript in ES6, which gives JavaScript's `prototypal inheritence` system a more familiar `Class based Object Oriented inheritence` system.
@@ -167,37 +167,6 @@ componentWillUnmount() {}
 
 ![Lifecycle Methods](https://miro.medium.com/max/4560/1*EnuAy1kb9nOcFuIzM49Srw.png)
 
-### The Mistake I made in Class
-
-In class, I made a mistake in my handling of props, which effected the UI from updating correctly.
-
-Basically, with a class component, don't assign props in the constructor, because that will only be run once, not each time your component is updated.
-
-
-```js
-// don't do this:
-
-class TodoItem extends Component {
-    constructor (props) {
-        const id = props.id;
-        const task = props.task;
-        ...
-    }
-}
-
-//do this instead
-
-class TodoItem extends Component {
-    constructor () {
-    }
-
-    render () {
-        return <li>
-                {this.props.task}
-            </li>;
-    }
-}
-```
 
 ### Useful Links
 - [ES6 Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
